@@ -1,0 +1,19 @@
+{
+  "name": "pokemon-pokedex-vanilla",
+  "version": "1.0.0",
+  "description": "select your team for the Sinnoh League (only 6)\nafter the 6 being selected show a slider with the six to confirm the selection\nin the end present the six side-by-side like a resume of the selection",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "chart.js": "2.9.4",
+    "eslint": "7.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}
