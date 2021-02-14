@@ -21,6 +21,7 @@ const goToSelectAttacks = () => {
   const listOfPokemonSelected = Array.from(pokemonSelected).map(
     (pokemon) => pokemon.classList[0]
   );
+  localStorage.setItem("order", listOfPokemonSelected);
   console.log(listOfPokemonSelected);
   getAllMovesAndAttacksOfPokemonSelected(listOfPokemonSelected);
 
@@ -56,6 +57,12 @@ const goToSelectAttacks = () => {
         </div>`
     )
     .join("");
+
+  Array.from(document.getElementsByClassName("slider-image")).map(
+    (pokeSelected) => {
+      localStorage.setItem(pokeSelected.alt, pokeSelected.src);
+    }
+  );
 
   containerPokemons.innerHTML = teamSelected;
 
